@@ -5,6 +5,7 @@ import {
   eHarmonyNetwork,
   eOptimismNetwork,
   ePolygonNetwork,
+  eScrollNetwork,
   TransferStrategy,
 } from "./../../helpers/types";
 import { ZERO_ADDRESS } from "../../helpers/constants";
@@ -158,6 +159,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eArbitrumNetwork.arbitrumTestnet]: true,
     [eOptimismNetwork.main]: true,
     [eOptimismNetwork.testnet]: true,
+    [eScrollNetwork.alpha]: true,
   },
   ParaswapRegistry: {
     [eEthereumNetwork.main]: "0xa68bEA62Dc4034A689AA0F58A76681433caCa663",

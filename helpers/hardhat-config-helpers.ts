@@ -11,6 +11,7 @@ import {
   eAvalancheNetwork,
   eFantomNetwork,
   eOptimismNetwork,
+  eScrollNetwork,
 } from "./types";
 
 require("dotenv").config();
@@ -82,6 +83,7 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eOptimismNetwork.testnet]: `https://opt-goerli.g.alchemy.com/v2/demo`,
   [eOptimismNetwork.main]: `https://mainnet.optimism.io`,
   tenderly: `https://rpc.tenderly.co/fork/${TENDERLY_FORK_ID}`,
+  [eScrollNetwork.alpha]: 'https://alpha-rpc.scroll.io/l2',
   [eEthereumNetwork.goerli]: `https://eth-goerli.alchemyapi.io/v2/${getAlchemyKey(
     eEthereumNetwork.goerli
   )}`,

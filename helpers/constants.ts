@@ -7,6 +7,7 @@ import {
   eHarmonyNetwork,
   eOptimismNetwork,
   ePolygonNetwork,
+  eScrollNetwork,
 } from "./types";
 
 const {
@@ -41,6 +42,7 @@ export const WRAPPED_NATIVE_TOKEN_PER_NETWORK: { [network: string]: string } = {
   [eArbitrumNetwork.arbitrumTestnet]:
     "0x8592a357252606f5cA2897BD4f500201F7245C28",
   [eOptimismNetwork.main]: "0x4200000000000000000000000000000000000006",
+  [eScrollNetwork.alpha]: "0xa1EA0B2354F5A344110af2b6AD68e75545009a03",
   [eAvalancheNetwork.avalanche]: "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
   [eFantomNetwork.main]: "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
   [eHarmonyNetwork.main]: "0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a",
@@ -93,6 +95,7 @@ export const chainlinkAggregatorProxy: Record<string, string> = {
   fantom: "0xf4766552D15AE4d256Ad41B6cf2933482B0680dc",
   "harmony-testnet": "0xcEe686F89bc0dABAd95AEAAC980aE1d97A075FAD",
   "optimism-testnet": "0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31",
+  "scroll-alpha": "0x4CD8c14fcc7A5ED42E5D86e991D9D239a529CAc0",
   "fantom-testnet": "0xe04676B9A9A2973BCb0D1478b5E1E9098BBB7f3D",
   ropsten: "0x12BAaa24D85A4A180F0d5ae67b6aCbDDD58968EA",
   goerli: "0x60E4B131f0F219c72b0346675283E73888e4AB24",
@@ -115,6 +118,7 @@ export const chainlinkEthUsdAggregatorProxy: Record<string, string> = {
   fantom: "0x11DdD3d147E5b83D01cee7070027092397d63658",
   "harmony-testnet": "0x4f11696cE92D78165E1F8A9a4192444087a45b64",
   "optimism-testnet": "0xEFFC18fC3b7eb8E676dac549E0c693ad50D1Ce31",
+  "scroll-alpha": "0x4CD8c14fcc7A5ED42E5D86e991D9D239a529CAc0",
   "fantom-testnet": "0xB8C458C957a6e6ca7Cc53eD95bEA548c52AFaA24",
   ropsten: "0x12BAaa24D85A4A180F0d5ae67b6aCbDDD58968EA",
   goerli: "0x60E4B131f0F219c72b0346675283E73888e4AB24",

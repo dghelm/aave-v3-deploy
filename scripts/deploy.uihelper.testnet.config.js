@@ -71,5 +71,12 @@ module.exports = {
       },
       ...commons,
     },
+    {
+      name: "scroll-alpha-ui-helper",
+      env: {
+        HARDHAT_NETWORK: "scroll-alpha",
+      },
+      ...commons,
+    },
   ],
 };
