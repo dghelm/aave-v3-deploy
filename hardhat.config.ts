@@ -201,6 +201,18 @@ export default {
     ? DETERMINISTIC_FACTORIES
     : undefined,
   etherscan: {
-    apiKey: ETHERSCAN_KEY,
+    apiKey: {
+      'scroll-alpha': 'abc',
+    },
+    customChains: [
+      {
+        network: 'scroll-alpha',
+        chainId: 534353,
+        urls: {
+          apiURL: 'https://blockscout.scroll.io/api',
+          browserURL: 'https://blockscout.scroll.io/',
+        },
+      },
+    ],
   },
 };
