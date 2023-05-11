@@ -118,6 +118,10 @@ export default {
       eEthereumNetwork.goerli,
       5
     ),
+    [eEthereumNetwork.sepolia]: getCommonNetworkConfig(
+      eEthereumNetwork.sepolia,
+      11155111
+    ),
     [eArbitrumNetwork.goerliNitro]: getCommonNetworkConfig(
       eArbitrumNetwork.goerliNitro,
       421613
